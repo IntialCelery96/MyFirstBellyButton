@@ -1,7 +1,84 @@
 <html>
 <head>
+  <style>
+    p {
+  color: blue;
+  background: green;
+}
+.toppyhat div p {
+  color: yellow;
+}
+div div p {
+  
+}
+.dice {
+  color:pink;
+}
+img {
+  width: 300px;
+}
+  </style>
+  <script>
+    var isit = false;
+
+$("button.tt").click(function(){
+ 	if (confirm("Are you sure you want to continue with this action?")){
+  	alert("great");
+  } else {
+  	alert("why not")
+  };
+ });
+ 
+ //confirm("Are you sure you want to continue with this action?")
+ 
+ /*alert(
+$("p").first().innerHTML();
+)*/
+
+//var inputthing = $("input").value();
+
+
+//alert("yo");
+$("button.clicky").click(function(){
+	//alert("yogurt");
+  
+  var typed = $("input").val();
+//  var typed = "";
+  
+  if (typed == "") {
+  	alert("you need ot type domthing");
+  } else {
+  	alert(typed);
+  }
+  
+  $(".toppyhat p").text(typed);
+
+});
+  </script>
 </head>
 <body>
+ <div class="toppyhat">
+  <div>
+    <p>
+    This is a paragraph
+    </p>
+    <img src="https://www.jellybelly.com/resources/images/new-logo-images/jb_logo_web_header.png" alt="">
+  </div>
+</div>
+<p class="clicky">
+This is a 2nd paragraph
+</p>
+<a href="http://cabezud.com" target="_blank">linky here</a>
+<div class="dice">
+jdflaksjfkldsajfkals;dfjk
+</div>
+<input/>
+<button class="clicky">
+click me
+</button>
+<button class="tt">
+test
+</button>
   <p>hello world</p>
 </body>
 </html>
